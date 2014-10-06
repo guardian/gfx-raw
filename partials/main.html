@@ -244,6 +244,8 @@
 						<div ng-switch="" on="option.type()">
 							<input type="number" min="0" class="form-control" ng-model="option.value" ng-switch-when="number"></input>
 
+							<input type="text" class="form-control" ng-model="option.value" ng-switch-when="string"></input>
+
 							<div ng-switch-when="checkbox">
 								<label class="checkbox">
 									<input type="checkbox" ng-model="option.value"/>
